@@ -1,0 +1,35 @@
+Topic,Concept
+Supervised Learning,Classification
+Supervised Learning,Regression
+Unsupervised Learning,Clustering
+Unsupervised Learning,Dimensionality Reduction
+Semi-Supervised Learning,Self-training
+Semi-Supervised Learning,Co-training
+Reinforcement Learning,Policy Optimization
+Reinforcement Learning,Value-Based Learning
+Linear Models,Linear Regression
+Linear Models,Logistic Regression
+Tree-Based Models,Decision Trees
+Tree-Based Models,Random Forests
+Tree-Based Models,Gradient Boosted Machines
+Neural Networks,Feedforward Neural Networks
+Neural Networks,Convolutional Neural Networks
+Neural Networks,Recurrent Neural Networks
+Neural Networks,Transformers
+Clustering Algorithms,K-Means
+Clustering Algorithms,DBSCAN
+Clustering Algorithms,Agglomerative Hierarchical Clustering
+Dimensionality Reduction Algorithms,Principal Component Analysis
+Dimensionality Reduction Algorithms,t-Distributed Stochastic Neighbor Embedding
+Dimensionality Reduction Algorithms,Uniform Manifold Approximation and Projection
+Deep Learning,Neural Network Architectures
+Deep Learning,Pre-trained Models
+Transfer Learning,Fine-tuning
+Transfer Learning,Domain Adaptation
+Ensemble Learning,Bagging
+Ensemble Learning,Boosting
+Generative Models,Generative Adversarial Networks
+Generative Models,Variational Autoencoders
+Online Learning,Incremental Learning
+Explainable AI,SHAP
+Explainable AI,LIME
