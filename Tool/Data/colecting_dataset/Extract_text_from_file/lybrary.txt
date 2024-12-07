@@ -4,10 +4,13 @@ PyPDF2:
 
 Pros: Easy to use, good for extracting text from simple PDFs with minimal formatting.
 Cons: Struggles with complex layouts, scanned documents, and images.
+
 pdfplumber:
 
 Pros: Handles more complex layouts, extracts tables, and offers better control over text positioning.
 Cons: Slower than PyPDF2 and may require more memory.
+
+
 pdfminer:
 
 Pros: Accurate for extracting detailed text and layout information, handles complex PDFs well.

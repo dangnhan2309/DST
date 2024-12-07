@@ -1,6 +1,4 @@
-from tkinter.tix import FileSelectBox
 import PyPDF2
-
 
 class text_extract : 
     def __init__(self,file_path):
