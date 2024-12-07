@@ -20,7 +20,6 @@ class fitz_extract:
             cleaned_text = self.clean_text(text)
             full_text +=cleaned_text
         return full_text
-
     def clean_text(self, text):
         # Loại bỏ ký tự không phải chữ cái, số hoặc khoảng trắng
         text = re.sub(r'[^a-zA-Z0-9\s]', '', text)
@@ -59,3 +58,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
