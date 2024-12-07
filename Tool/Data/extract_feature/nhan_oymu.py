@@ -51,7 +51,7 @@ class fitz_extract:
 
 def main(): 
     text = fitz_extract(r'D:\DST\Tool\material\Introduction to Machine Learning with Python.pdf')
-    text.extract_text()
+    print(text.extract_text())
 
 if __name__ == "__main__":
     main()
