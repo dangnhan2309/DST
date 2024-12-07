@@ -36,6 +36,7 @@ class fitz_extract:
         cleaned_text = ' '.join(words)
         
         return cleaned_text
+
     def txt_extract (self): 
         # Open the file in read mode
         with open(self.path,'r', encoding='utf-8') as file:
@@ -48,6 +49,9 @@ class fitz_extract:
     def remove_punctuation(self, text):
         # Loại bỏ dấu câu
         return text.translate(str.maketrans('', '', string.punctuation))
+    def normalize(self,text):
+        stop_w
+
 
 def main(): 
     text = fitz_extract(r'D:\DST\Tool\material\Introduction to Machine Learning with Python.pdf')
