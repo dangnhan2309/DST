@@ -60,7 +60,7 @@ print(f"Trọng số TF-IDF của từ '{max_count_word}' trong tài liệu là 
 words_above_threshold = {}
 
 for idx, count in enumerate(word_counts):
-    if count > 10:
+    if count > 2:
         words_above_threshold[feature_names[idx]] = count
 
 # In các từ và số lần xuất hiện
