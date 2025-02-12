@@ -14,17 +14,44 @@ def change_path(current_path, newpath):
         label.config(text=f"File moved to: {newpath}")
     except Exception as e:
         label.config(text=f"Error: {str(e)}")
-def classify(file_path): 
-    #decided the topic of the file 
 
-    #------
-    #choose the suitable folder to classify
-    return r"C:\Users\Marco\Desktop\dst"
+
+
+def extract_content(file_path):
+    return text_data
+def emberding(text): 
+
+    return emberding_code
+def compare_ember_code(ember_code): 
+
+    if exist : 
+        return topic_path ; 
+    if not :
+        #tao folder, topic name , add topic to the warehouse
+        return
+    return topic_path
+def classify(file_path): 
+
+    data_file= extract_content(file_path)
+
+    emberding_data_file = emberding(data_file)
+
+
+    topic_path= compare_ember_code(emberding_data_file)
+
+    return topic_path
 def on_drop(event): 
     file_path = event.data.strip().strip('{}')
     file_name = os.path.basename(file_path)
+
     newpath = classify(file_path)
+
+
     change_path(file_path,newpath)
+
+
+
+
 # Create the main window
 
 def main(): 
