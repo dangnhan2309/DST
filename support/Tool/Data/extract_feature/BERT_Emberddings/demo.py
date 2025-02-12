@@ -25,6 +25,7 @@ for sentence in text:
     cls_embedding = outputs.last_hidden_state[0][0].detach().numpy()
     sentence_embeddings.append(cls_embedding)
 
+
 # Perform K-means clustering to group sentences by topic (example)
 kmeans = KMeans(n_clusters=2, random_state=0).fit(sentence_embeddings)
 
