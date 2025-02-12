@@ -4,7 +4,7 @@ from tkinterdnd2 import DND_FILES, TkinterDnD
 import os
 import subprocess
 import shutil
-
+import fitz  # PyMuPDF
 def on_button_click():
     folder_path = r"C:\Users\Marco\Desktop\dst"
     subprocess.run(["explorer", folder_path], shell=True)  # Open folder in Windows Explorer    
@@ -18,7 +18,27 @@ def change_path(current_path, newpath):
 
 
 def extract_content(file_path):
+    try:
+        if file_path.endswith('.pdf'):
+            return extract_pdf_content(file_path)
+        else:
+            return extract_text_content(file_path)
+    except Exception as e:
+        return f"Error {str(e)}"
+
+def extract_pdf_content(file_path):
+    pdf_document = fitz.open(file_path)
+    text_data = ""
+    for page_num in range(len(pdf_document)):
+        page = pdf_document.load_page(page_num)
+        text_data += page.get_text()
     return text_data
+
+def extract_text_content(file_path):
+    with open(file_path, 'r', encoding='utf-8') as file:
+        text_data = file.read()
+    return text_data
+
 def emberding(text): 
 
     return emberding_code
