@@ -43,6 +43,6 @@ topic = {
         "Bayesian Learning",  
         "Graph Neural Networks" ],
 
-     "Learning":[]
+     "Learning":["Math","history"]
        
         }

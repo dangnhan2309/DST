@@ -1,10 +1,19 @@
 from mailbox import Message, mboxMessage
 import tkinter as tk
+from pytest import File
 from tkinterdnd2 import DND_FILES, TkinterDnD
 import os
 import subprocess
 import shutil
+<<<<<<< Updated upstream
 import fitz  # PyMuPDF
+=======
+from update_folder_structure import FolderMapper
+
+from Main.Main_program import Create_emberding
+from bert import Emberding
+
+>>>>>>> Stashed changes
 def on_button_click():
     folder_path = r"C:\Users\Marco\Desktop\dst"
     subprocess.run(["explorer", folder_path], shell=True)  # Open folder in Windows Explorer    
@@ -33,6 +42,7 @@ def extract_pdf_content(file_path):
         page = pdf_document.load_page(page_num)
         text_data += page.get_text()
     return text_data
+<<<<<<< Updated upstream
 
 def extract_text_content(file_path):
     with open(file_path, 'r', encoding='utf-8') as file:
@@ -40,9 +50,18 @@ def extract_text_content(file_path):
     return text_data
 
 def emberding(text): 
+=======
+>>>>>>> Stashed changes
 
+
+def emberding(text): 
+    emberding_code = Create_emberding(text)
     return emberding_code
 def compare_ember_code(ember_code): 
+    folder_check= r"C:\Users\Marco\Desktop\dst"
+    file_save= r"C:\Users\Marco\Desktop\dst\cautruc_folder.json"
+    updater = FolderMapper(folder_check,file_save)
+
 
     if exist : 
         return topic_path ; 
