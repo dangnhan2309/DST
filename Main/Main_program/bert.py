@@ -1,10 +1,9 @@
 from sentence_transformers import SentenceTransformer
 import numpy as np
-from sklearn.metrics.pairwise import cosine_similarity
+from sklearn.metrics.pairwise import cosine_similarity, sigmoid_kernel
 
 class Emberding:
     
-    @staticmethod
     def create_embedding(text):
         """
         Generates an embedding for a given text using Sentence-BERT (SBERT).
@@ -14,6 +13,14 @@ class Emberding:
         model = SentenceTransformer('all-MiniLM-L6-v2')  # Lightweight and efficient model
         embedding = model.encode(text, convert_to_tensor=True)
         return embedding
+
+
+    def compare_embercode(embedding,embedding_label):
+        embedding1 = np.asarray(embedding)
+        embedding_labeled = np.asarray(embedding_label)
+        similarity_score = cosine_similarity([embedding_labeled], [embedding1])
+
+        return similarity_score
 
 
 def main():

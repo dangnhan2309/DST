@@ -1,11 +1,11 @@
-{
-   "topic_name": {
-    "topic_emberding_code": [],
-    "description": "empty",
-    "des_emberding": []
-  },
-    "Supervised Learning": {
-        "topic_emberding_code":[
+topic_emberding= {
+    # "topic_name": {
+    #     "topic_emberding_code": "empty",
+    #     "description": "empty",
+    #     "des_emberding": []
+    # },
+    'Supervised Learning': {
+        'topic_emberding_code':[
             -0.025705596432089806,
             -0.05946589261293411,
             0.01442788727581501,

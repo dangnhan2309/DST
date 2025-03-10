@@ -13,7 +13,6 @@ def saving_into_json(topic, embedding_code, path):
             except json.JSONDecodeError:
                 data = {}  #
         data = {}
-
     data[topic] = {
         "topic_emberding_code": embedding_code.tolist(),
         "description": "empty",

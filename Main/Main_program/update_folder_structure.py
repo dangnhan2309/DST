@@ -29,7 +29,7 @@ class FolderMapper:
                     "Files": self._list_files(root)
                 })
             break  # Chỉ duyệt cấp đầu tiên
-        return topics
+        return 0
 
     def _map_subtopics(self, path):
         subtopics = []
