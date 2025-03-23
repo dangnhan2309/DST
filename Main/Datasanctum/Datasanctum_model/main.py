@@ -36,7 +36,7 @@ def extract_content(file_path):
 
 
 def prinsddadst(): 
-    orint
+    
 
 def extract_pdf_content(file_path):
     pdf_document = fitz.open(file_path)
