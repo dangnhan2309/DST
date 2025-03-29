@@ -1,0 +1,59 @@
+{
+    "ProgramName": "Main",
+    "Topics": [
+        {
+            "TopicName": "data_preprocessing",
+            "SubTopics": [],
+            "Files": [
+                "madember.md"
+            ]
+        },
+        {
+            "TopicName": "deployment(main)",
+            "SubTopics": [],
+            "Files": [
+                "readme.md"
+            ]
+        },
+        {
+            "TopicName": "Main_program",
+            "SubTopics": [
+                {
+                    "SubTopicName": "__pycache__",
+                    "SubTopics": [],
+                    "Files": [
+                        "bert.cpython-313.pyc",
+                        "labels_ML.cpython-313.pyc",
+                        "test.py"
+                    ]
+                }
+            ],
+            "Files": [
+                "bert.py",
+                "cautruc_folder_test.json",
+                "compare_embercode.py",
+                "create_emberding_for_topic.py",
+                "folder_tree.py",
+                "labels_ML.py",
+                "main.py",
+                "readme.md",
+                "topic_emberding.json",
+                "update_folder_structure.py"
+            ]
+        },
+        {
+            "TopicName": "model_evaluation",
+            "SubTopics": [],
+            "Files": [
+                "readme.md"
+            ]
+        },
+        {
+            "TopicName": "model_training",
+            "SubTopics": [],
+            "Files": [
+                "readme.md"
+            ]
+        }
+    ]
+}
